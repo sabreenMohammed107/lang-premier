@@ -12,7 +12,7 @@
 					<div class="hpanel">
 						<div class="panel-body" style="background-color:rgba(255,255,255,0.5) !important;border-radius: .5rem !important;">
 							<div class="">
-								<div class="header-top-menu tabl-d-n">
+								<div class=" tabl-d-n">
 									<ul class="nav navbar-nav mai-top-nav">
 										<li class="nav-item dropdown res-dis-nn">
 											@if(str_replace('_', '-', app()->getLocale())=='ar')
