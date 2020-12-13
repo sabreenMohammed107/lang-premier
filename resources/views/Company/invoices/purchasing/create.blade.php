@@ -339,7 +339,7 @@
 
                                 <button id="add" style="float: left;" onclick="ajax_row('{{url('Invoice/Purchasing/AddRow')}}')" class="btn btn-primary waves-effect waves-light">{{__('titles.add')}} {{__('titles.items')}}</button></div>
                             <br>
-                            <table class="table-striped dir-rtl" id="puchasetable" data-locale="ar-SA" data-pagination="false" data-pagination-pre-text="{{__('titles.prev')}}" data-pagination-next-text="{{__('titles.next')}}" data-show-export="true" data-minimum-count-columns="2" data-page-list="[10, 25, 50, 100, all]" data-sort-name="index" data-sort-order="asc" style="direction:rtl" data-toggle="table" data-key-events="true" data-resizable="true" data-cookie="true" data-toolbar="#toolbar" data-show-fullscreen="true">
+                            <table class="table-striped dir-rtl" id="puchasetable" data-locale="ar-SA" data-pagination="false" data-pagination-pre-text="{{__('titles.prev')}}" data-pagination-next-text="{{__('titles.next')}}" data-show-export="true" data-minimum-count-columns="2" data-page-list="[10, 25, 50, 100, all]" data-sort-name="index" data-sort-order="asc"  data-toggle="table" data-key-events="true" data-resizable="true" data-cookie="true" data-toolbar="#toolbar" data-show-fullscreen="true">
                                 <thead>
                                     <tr>
                                         <th data-field="index" data-sortable="true">#</th>
