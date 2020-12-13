@@ -24,13 +24,18 @@
                 <div class="bt-df-checkbox">
                     <input class="radio-checked" name="confirmed{{$row->id}}" onchange="fillCheck({{$row->id}})" type="checkbox"  @if($row->confirm==1) checked @endif   >
                   
-                    <label><b> معتمد </b></label>
+                    <label><b> @if ($row->confirm == 1)
+                                            {{ __('titles.confirm') }}
+                                            @else
+                                            {{ __('titles.not_confirm') }}
+                                            @endif </b></label>
                 </div>
             </td>
-            <td>10000</td>
+            <td>{{$row->net_value}}</td>
             <td>
                 <div class="product-buttons">
-                    <button title="View" class="pd-setting-ed"><i class="fa fa-file" aria-hidden="true"></i></button>
+
+                    <!-- <button title="View" class="pd-setting-ed"><i class="fa fa-file" aria-hidden="true"></i></button> -->
                     <!-- <button data-toggle="modal" data-target="#del" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></button> -->
                 </div>
             </td>

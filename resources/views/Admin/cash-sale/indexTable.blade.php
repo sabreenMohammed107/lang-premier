@@ -24,7 +24,11 @@
                 <div class="bt-df-checkbox">
                     <input class="radio-checked" name="confirmed{{$row->id}}" onchange="fillCheck({{$row->id}})" type="checkbox"  @if($row->confirm==1) checked @endif   >
                   
-                    <label><b> معتمد </b></label>
+                    <label><b> @if ($row->confirm == 1)
+                                            {{ __('titles.confirm') }}
+                                            @else
+                                            {{ __('titles.not_confirm') }}
+                                            @endif  </b></label>
                 </div>
             </td>
             <td>10000</td>

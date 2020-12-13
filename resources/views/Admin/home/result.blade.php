@@ -7,10 +7,10 @@
 								<h2>{{$row->company_official_name}}</h2>
 							</div>
 							<div class="course-des">
-								<p><span><i class="fa fa-clock"></i></span> <b>رقم التسجيل:</b> {{$row->registeration_no}}</p>
-								<p><span><i class="fa fa-clock"></i></span> <b>مأموريه الضرائب:</b> {{$row->tax_authority}}</p>
-								<p><span><i class="fa fa-clock"></i></span> <b>الكيان القانونى:</b> {{$row->legal_entity}}</p>
-								<p><span><i class="fa fa-clock"></i></span> <b>مفعل:</b><i class="fa fa-check"></i></p>
+								<p><span><i class="fa fa-clock"></i></span> <b><h2> {{ __('titles.registeration_no') }}</h2>:</b> {{$row->registeration_no}}</p>
+								<p><span><i class="fa fa-clock"></i></span> <b><h2> {{ __('titles.tax_authority') }}</h2>:</b> {{$row->tax_authority}}</p>
+								<p><span><i class="fa fa-clock"></i></span> <b><h2> {{ __('titles.legal_entity') }}</h2>:</b> {{$row->legal_entity}}</p>
+								<p><span><i class="fa fa-clock"></i></span> <b><h2> {{ __('titles.active') }}</h2>:</b><i class="fa fa-check"></i></p>
 							</div>
 							<div class="product-buttons">
 							<a data-toggle="tooltip" title="View" href="{{ route('home.show',$row->id) }}" class="pd-setting-ed"><i class="fa fa-file" aria-hidden="true"></i></a>
@@ -22,7 +22,7 @@
 									<div class="modal-dialog">
 										<div class="modal-content">
 											<div class="modal-header header-color-modal bg-color-2">
-												<h4 class="modal-title" style="text-align:right">حذف بيانات الشركة</h4>
+												<h4 class="modal-title" >{{ __('titles.delete_data') }}</h4>
 												<div class="modal-close-area modal-close-df">
 													<a class="close" data-dismiss="modal" href="#"><i class="fa fa-close"></i></a>
 												</div>
@@ -30,14 +30,14 @@
 											<div class="modal-body">
 												<span class="educate-icon educate-danger modal-check-pro information-icon-pro"> </span>
 												<h2>{{$row->company_official_name ?? ''}}</h2>
-												<h4>هل تريد حذف جميع بيانات الشركة ؟ </h4>
+												<h4>{{ __('titles.delete_data_qest') }} </h4>
 											</div>
 											<div class="modal-footer info-md">
-												<button data-dismiss="modal" >إلغــاء</button>
+												<button data-dismiss="modal" >{{ __('titles.cancel') }}</button>
 												<form id="delete" style="display: inline;" action="{{ route('home.destroy', $row->id) }}" method="POST">
 													@csrf
 													@method('DELETE')
-													<button type="submit">حذف</button>
+													<button type="submit">{{ __('titles.delete') }}</button>
 												</form>
 											</div>
 										</div>
