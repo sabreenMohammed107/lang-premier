@@ -171,6 +171,7 @@ return [
 /*=============================purchases =========================*/
 'purchases'=>'Purchasing Invoices',
 'bill_no'=>'Invoice No',
+'bill_type'=>'Invoice Type',
 'total'=>'Total',
 'discount'=>'Discount',
 'total_vat_value'=>'Total vat value',
