@@ -166,7 +166,7 @@ return [
 'net_value'=>'Net value',
 'vat_value'=>'Vat value',
 'comm_industr_prof_tax'=>'Comm_industr_prof_tax',
-
+'report'=>'Report',
 /*============================= Cash receipts=========================*/
 'receipts'=>'Cash receipts',
 /*=============================purchases =========================*/

@@ -25,9 +25,9 @@
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="mg-b-15">
-                    {{-- <button class="btn btn-primary waves-effect waves-light">إلغــــاء</button>
+                    {{-- <button class="btn btn-primary waves-effect waves-light">{{ __('titles.cancel') }}</button>
                     <button class="btn btn-primary waves-effect waves-light">حــفـــظ</button> --}}
-                    <a href="{{url(Auth::user()->role_id == 100 || Auth::user()->role_id == 101 || Auth::user()->role_id == null ? '/' : '/Company')}}" class="btn btn-primary waves-effect waves-light">إلغــــاء</a>
+                    <a href="{{url(Auth::user()->role_id == 100 || Auth::user()->role_id == 101 || Auth::user()->role_id == null ? '/' : '/Company')}}" class="btn btn-primary waves-effect waves-light">{{ __('titles.cancel') }}</a>
 
                 </div>
             <form action="{{url('/Cheques/Report/Fetch')}}" method="post">

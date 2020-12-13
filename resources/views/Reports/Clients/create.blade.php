@@ -27,7 +27,7 @@
                 <div class="mg-b-15">
                     {{-- <button class="btn btn-primary waves-effect waves-light">{{ __('titles.cancel') }}</button>
                     <button class="btn btn-primary waves-effect waves-light">{{ __('titles.save') }}</button> --}}
-                    <a href="{{url(Auth::user()->role_id == 100 || Auth::user()->role_id == 101 || Auth::user()->role_id == null ? '/' : '/Company')}}" class="btn btn-primary waves-effect waves-light">إلغــــاء</a>
+                    <a href="{{url(Auth::user()->role_id == 100 || Auth::user()->role_id == 101 || Auth::user()->role_id == null ? '/' : '/Company')}}" class="btn btn-primary waves-effect waves-light">{{ __('titles.cancel') }}</a>
 
                 </div>
             <form target="_blank" action="{{url('/Clients/Report/Fetch')}}" method="post">
