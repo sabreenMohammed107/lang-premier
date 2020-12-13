@@ -29,7 +29,7 @@
 		<!-- Single pro tab review Start-->
 		<div class="single-pro-review-area mt-t-30 mg-b-15">
 			<div class="container-fluid">
-                <a href="{{ url("/Company/Suppliers")}}" class="btn btn-primary waves-effect waves-light mg-b-15">رجــــــوع</a>
+                <a href="{{ url("/Company/Suppliers")}}" class="btn btn-primary waves-effect waves-light mg-b-15">{{ __('titles.back') }}</a>
             @component('/Company/components/SupplierForm')
             @slot('image')
             @isset($Supplier->person_logo)

@@ -14,7 +14,7 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="review-content-section">
                         <div class="row">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="direction:rtl"">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dir-rtl" >
                                 {{-- <div class="file-upload-inner ts-forms mg-b-15">
                                     <div class="input prepend-big-btn">
                                         <label class="icon-right" for="prepend-big-btn">
