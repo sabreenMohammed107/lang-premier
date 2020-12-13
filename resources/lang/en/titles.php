@@ -158,7 +158,8 @@ return [
 'machine_equipment'=>'Machine / Equipment',
 'outgoings_type'=>' Outgoings types',
 'Services_type'=>'Services type',
-
+'bill'=>'Invoice',
+'returned'=>'Returned Invoice',
 'supplying'=>'Supplying ',
 'imported'=>'imported ',
 'local'=>'local ',
