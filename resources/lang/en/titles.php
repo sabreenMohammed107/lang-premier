@@ -86,7 +86,7 @@ return [
      'location' => 'Location',
      'account_num' => 'Account Number',
      'open_balance_date' => 'Open Balance Date',
-     'open_blance_amount' => 'Open Blance Amount',
+     'open_blance_amount' => 'Open Balance Cost',
      'current_balance' => 'Current Balance',
 
      'suppliers' => 'Suppliers',
@@ -191,9 +191,9 @@ return [
 /*=============================items =========================*/
 'arabic_name'=>'Arabic Name',
 'english_name'=>'English Name',
-'current_item_price'=>'current item price',
-'open_balance_items'=>'open blance for meny items',
-'open_blance_one_item'=>'onpen balance for one item',
+'current_item_price'=>'Current item price',
+'open_balance_items'=>'Items Qty Open Balance',
+'open_blance_one_item'=>'Item Cost Open Balance',
 'something_error'=>'Something Error',
 'try_again'=>'Try Again !',
 
