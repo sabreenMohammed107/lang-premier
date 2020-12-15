@@ -14,11 +14,7 @@
     </li>
     <li>
     <span class="bread-blod">
-        @if(isset($Supplier->person_name))
-        {{$Supplier->person_name}}
-        @else
-        {{ __('titles.add') }}
-        @endif
+      
     </span>
     </li>
 </ul>

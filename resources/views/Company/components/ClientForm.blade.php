@@ -14,7 +14,7 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="review-content-section">
                         <div class="row">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="direction:rtl"">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dir-rtl" >
                                 {{-- <div class="file-upload-inner ts-forms mg-b-15">
                                     <div class="input prepend-big-btn">
                                         <label class="icon-right" for="prepend-big-btn">
@@ -75,11 +75,11 @@
 
                     <div class="product-payment-inner-st" style="padding-top:0px">
                         <div class="row mg-b-15">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mg-b-15">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mg-b-15 dir-rtl">
                                 <div class="review-content-section">
                                     <div id="dropzone1" class="pro-ad addcoursepro">
                                             <div class="row">
-                                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" style="direction:rtl">
+                                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" >
                                                     <div class="form-group">
                                                         <label class="phone2">{{ __('titles.phone') }} 2 </label>
                                                     <input name="phone2" tabindex="13" {{$disabled ?? ''}} value="{{$phone2 ?? ''}}" type="text" class="form-control" placeholder="{{ __('titles.phone') }} ">
@@ -110,7 +110,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" style="direction:rtl">
+                                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" >
                                                     <div class="form-group">
                                                         <label class="">{{ __('titles.phone') }} 1</label>
                                                     <input name="phone1" tabindex="6" {{$disabled ?? ''}} value="{{$phone1 ?? ''}}" type="text" class="form-control" placeholder="{{ __('titles.phone') }} ">
@@ -147,7 +147,7 @@
 
                                                     </div>
                                                     <div></div>
-                                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" style="direction:rtl">
+                                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 dir-rtl" >
                                                         <div class="form-group">
                                                             <label class="alert alert-danger" style="color: red;"> {{ __('titles.balance_statment_depit') }}</label>
                                                         </div>
@@ -156,7 +156,7 @@
                                                         <input name="" value="{{$current ?? ''}}" disabled id="email" type="text" class="form-control" placeholder="{{ __('titles.current_balance') }}">
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" style="direction:rtl">
+                                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 dir-rtl" >
                                                         <div class="form-group">
                                                             <label class="alert alert-danger" style="color: red;">{{ __('titles.balance_statment_credit') }}</label>
                                                         </div>

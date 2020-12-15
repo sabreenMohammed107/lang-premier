@@ -9,9 +9,11 @@ use App\Models\Person;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Database\Eloquent\Collection;
+use App\Exports\UsersExport;
 
 use Meneses\LaravelMpdf\Facades\LaravelMpdf as PDF;
 use Carbon\Carbon;
+use Maatwebsite\Excel\Facades\Excel as Excel;
 
 class CashBoxReportController extends Controller
 {
@@ -38,11 +40,11 @@ class CashBoxReportController extends Controller
      */
     public function index()
     {
-        $user=Auth::user();
+        $user = Auth::user();
         $exception = $user->company->pluck('id')->toArray();
-      
+
         $rows = Company::whereIn('id', $exception)->where('id', '!=', 100)->get();
-        if(Auth::user()->role_id == 110){
+        if (Auth::user()->role_id == 110) {
             $rows = Company::where('id', '!=', 100)->orderBy("created_at", "Desc")->get();
         }
         // $rows = Company::where('active', 1)->where('id', '!=', 100)->get();
@@ -95,11 +97,11 @@ class CashBoxReportController extends Controller
         foreach ($companies_ids as $id) {
             $obj = new Collection();
             $obj->company_name = Company::where('id', $id)->first()->company_official_name ?? '';
-            $obj->safe_id =Company::where('id', $id)->first()->safe_id;
-            $obj->logo =Company::where('id', $id)->first()->company_logo;
+            $obj->safe_id = Company::where('id', $id)->first()->safe_id;
+            $obj->logo = Company::where('id', $id)->first()->company_logo;
             $obj->trans = array();
             foreach ($trans as $objs) {
-                
+
                 if ($objs->safe_id == Company::where('id', $id)->first()->safe_id) {
                     array_push($obj->trans, $objs);
                 }
@@ -117,18 +119,52 @@ class CashBoxReportController extends Controller
             'from_date' => $from_date,
             'to_date' => $to_date,
             'Today' => date('Y-m-d'),
-           
             'User'  =>  Auth::user(),
-            
 
         ];
+   
+
+
+        if ($request->get('action') == 'savepdf') {
+            
         $title = "My Report";
         $pdf = PDF::loadView('Admin.reports.cashBox-trans.cashBoxReport', $data);
         $pdf->allow_charset_conversion = false;
         $pdf->autoScriptToLang = true;
         $pdf->autoLangToFont = true;
+      
 
         return $pdf->stream('medium.pdf');
+        }
+
+
+        if ($request->get('action') == 'saveExcel') {
+            ob_end_clean(); // this
+            ob_start(); // and this
+           
+            $range = ['start'=>$from_date, 'end'=>$to_date ,'cashIds'=>[$cashBox_ids]];
+            //  return Excel::download(new UsersExport($range), 'invoices.xlsx');
+    
+            return (new UsersExport($range))->download('invoices.xlsx');
+    
+    
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;
+
     }
 
     /**
