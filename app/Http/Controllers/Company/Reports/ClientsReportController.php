@@ -74,7 +74,11 @@ class ClientsReportController extends Controller
             'Company' => $Company,
             'User'  =>  Auth::user(),
         ];
-        $pdf = PDF::loadView('Reports.Clients.report', $data);
+        if(app()->getLocale() =='ar'){
+            $pdf = PDF::loadView('Reports.Clients.report', $data);
+        }else{
+            $pdf = PDF::loadView('Reports.Clients.reportEn', $data);
+        }
         $pdf->allow_charset_conversion = false;
         $pdf->autoScriptToLang = true;
         $pdf->autoLangToFont = true;

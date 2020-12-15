@@ -73,7 +73,12 @@ class PermissionReportsController extends Controller
             'Company' => $Company,
             'User'  =>  Auth::user(),
         ];
-        $pdf = PDF::loadView('Reports.Permissions.Receipt.report', $data);
+        if(app()->getLocale() =='ar'){
+            $pdf = PDF::loadView('Reports.Permissions.Receipt.report', $data);
+        }else{
+            $pdf = PDF::loadView('Reports.Permissions.Receipt.reportEn', $data);
+        }
+       
         $pdf->allow_charset_conversion = false;
         $pdf->autoScriptToLang = true;
         $pdf->autoLangToFont = true;
@@ -140,7 +145,12 @@ class PermissionReportsController extends Controller
             'Company' => $Company,
             'User'  =>  Auth::user(),
         ];
-        $pdf = PDF::loadView('Reports.Permissions.Payment.report', $data);
+        if(app()->getLocale() =='ar'){
+            $pdf = PDF::loadView('Reports.Permissions.Payment.report', $data);
+        }else{
+            $pdf = PDF::loadView('Reports.Permissions.Payment.reportEn', $data);
+        }
+      
         $pdf->allow_charset_conversion = false;
         $pdf->autoScriptToLang = true;
         $pdf->autoLangToFont = true;

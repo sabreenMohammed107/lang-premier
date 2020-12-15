@@ -92,7 +92,12 @@ class InvoiceReportsController extends Controller
             'Company' => $Company,
             'User'  =>  Auth::user(),
         ];
-        $pdf = PDF::loadView('Reports.InvoiceReports.Purchasing.report', $data);
+        if(app()->getLocale() =='ar'){
+            $pdf = PDF::loadView('Reports.InvoiceReports.Purchasing.report', $data);
+        }else{
+            $pdf = PDF::loadView('Reports.InvoiceReports.Purchasing.reportEn', $data);
+        }
+      
         $pdf->allow_charset_conversion = false;
         $pdf->autoScriptToLang = true;
         $pdf->autoLangToFont = true;
@@ -177,7 +182,12 @@ class InvoiceReportsController extends Controller
             'Company' => $Company,
             'User'  =>  Auth::user(),
         ];
-        $pdf = PDF::loadView('Reports.InvoiceReports.Sales.report', $data);
+        if(app()->getLocale() =='ar'){
+            $pdf = PDF::loadView('Reports.InvoiceReports.Sales.report', $data);
+        }else{
+            $pdf = PDF::loadView('Reports.InvoiceReports.Sales.reportEn', $data);
+        }
+      
         $pdf->allow_charset_conversion = false;
         $pdf->autoScriptToLang = true;
         $pdf->autoLangToFont = true;
