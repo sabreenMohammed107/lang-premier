@@ -6,7 +6,7 @@
 
 <ul class="breadcome-menu">
     <li>
-        <a href="#"></a> {{ __('titles.purchasing') }}<span class="bread-slash"> / </span>
+        <a href="#"></a> {{ __('titles.cash_payments') }}<span class="bread-slash"> / </span>
     </li>
     <li>
         <span class="bread-blod"> {{ __('titles.company') }}</span>
@@ -31,7 +31,7 @@
                 <div class="sparkline13-list">
                     <div class="sparkline13-hd">
                         <div class="main-sparkline13-hd dir-rtl">
-                            <h4 >{{ __('titles.purchasing') }}</h4>
+                            <h4 >{{ __('titles.cash_payments') }}</h4>
                             <h3 >{{$Company->company_official_name}} {{__('titles.supp_stock')}}</h3><br />
                         </div>
                     </div>

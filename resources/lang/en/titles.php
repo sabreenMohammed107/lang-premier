@@ -36,8 +36,8 @@ return [
      'employee_statment' => 'Employees ',
      /*=================================*/
      'cash_box' => 'Cash Box',
-     'cash_receipts' => 'Cash receipts',
-     'cash_payments' => 'Cash payments',
+     'cash_receipts' => 'Cash Receipts',
+     'cash_payments' => 'Cash Payments',
      /*============================*/
      'bills' => 'Invoices',
      'purchasing' => 'Purchasing',
@@ -86,7 +86,7 @@ return [
      'location' => 'Location',
      'account_num' => 'Account Number',
      'open_balance_date' => 'Open Balance Date',
-     'open_blance_amount' => 'Open Balance Cost',
+     'open_blance_amount' => 'Open Balance',
      'current_balance' => 'Current Balance',
 
      'suppliers' => 'Suppliers',
@@ -132,9 +132,9 @@ return [
 
      'tax_data' => 'Tax data',
      'phone_data' => 'Contact data',
-     'safe_data' => 'Safe data',
+     'safe_data' => 'Cashbox data',
      'bank_data' => 'Bank data',
-     'no_safe_data'=>'No Safe Regester',
+     'no_safe_data'=>'No Cashbox Regester',
      'no_bank_data'=>'No Bank Register',
 'code'=>'code',
 
@@ -234,8 +234,8 @@ return [
 'done'=>'Done',
 'page_no'=>'Page No',
 'user_name'=>'User Name',
-'total_repayment'=>'Total repayment',
-'total_repayment'=>'Total repayment',
+'total_repayment'=>'Total Repayment',
+'total_repayment'=>'Total Repayment',
 'total_purchases' =>'Total purchases',
 'total_items'=>'total items',
 'person_type'=>'person type',
