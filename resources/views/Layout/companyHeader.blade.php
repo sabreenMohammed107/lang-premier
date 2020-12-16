@@ -99,8 +99,8 @@
     													<a href="#" class="dropdown-item">{{ __('titles.discount_notices') }}</a>
     													@endif
     													@if (Auth::user()->role_id == 102 || Auth::user()->role_id == 104)
-    													<a href="{{url('/Cash/Purchasing/Report/Create')}}" class="dropdown-item">{{ __('titles.cash_receipts_reports') }}</a>
-    													<a href="{{url('/Cash/Sales/Report/Create')}}" class="dropdown-item">{{ __('titles.cash_payments_reports') }} </a>
+    													<a href="{{url('/Cash/Purchasing/Report/Create')}}" class="dropdown-item">{{ __('titles.cash_payments_reports') }}</a>
+    													<a href="{{url('/Cash/Sales/Report/Create')}}" class="dropdown-item"> {{ __('titles.cash_receipts_reports') }}</a>
     													<a href="{{url('/Permissions/Receipt/Report/Create')}}" class="dropdown-item">{{ __('titles.Permission_receive_cash') }} </a>
     													<a href="{{url('/Permissions/Payment/Report/Create')}}" class="dropdown-item">{{ __('titles.Permission_exchange_cash') }} </a>
     													<a href="{{url('/Cheques/Report/Create')}}" class="dropdown-item">{{ __('titles.Permission_receive_cheques') }}</a>
