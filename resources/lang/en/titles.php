@@ -23,7 +23,7 @@ return [
      'other'=>'other',
      'type'=>'Type',
      'search'=>'Search',
-     'confirming'=>'confirming',
+     'confirming'=>'confirmation',
      /*------global Commans----------*/
      /*------global Company header----------*/
      'basic_data' => 'Basic Data',
@@ -58,7 +58,7 @@ return [
      'buy_report' => 'Purchasing Report',
      'sales_report' => 'Sales Report',
      'discount_notices' => 'Discount Notices',
-     'cash_receipts_reports' => 'Cash receipts Report',
+     'cash_receipts_reports' => 'Cash Receipts Report',
      'cash_payments_reports' => 'Cash payments Report',
      'Permission_receive_cash' => 'Permission to receive cash Report',
      'Permission_exchange_cash' => 'Permission to exchange cash Report',
@@ -169,7 +169,7 @@ return [
 'comm_industr_prof_tax'=>'Comm_industr_prof_tax',
 'report'=>'Report',
 /*============================= Cash receipts=========================*/
-'receipts'=>'Cash receipts',
+'receipts'=>'Cash Receipts',
 /*=============================purchases =========================*/
 'purchases'=>'Purchasing Invoices',
 'bill_no'=>'Invoice No',

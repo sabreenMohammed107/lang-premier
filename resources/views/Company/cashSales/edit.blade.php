@@ -161,7 +161,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                                                <label class="login2">{{__('titles.type')}}</label>
+                                                <label class="login2">{{__('titles.confirming')}}</label>
                                             </div>
                                         </div>
                                         <div class="row row-ltr">
