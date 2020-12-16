@@ -39,8 +39,8 @@
                             </div>
                         </div>
                         <div class="sparkline13-graph">
-                            <div class="datatable-dashv1-list custom-datatable-overright" style="direction:rtl">
-                                <div class="chosen-select-single mg-b-20" style="direction:rtl;">
+                            <div class="datatable-dashv1-list custom-datatable-overright dir-rtl" >
+                                <div class="chosen-select-single mg-b-20 dir-rtl" >
                                     <button class="btn btn-primary waves-effect waves-light">{{ __('titles.show_report') }}</button>
                                 </div>
                                 <div class="form-group-inner" style="margin-right:10px;">
