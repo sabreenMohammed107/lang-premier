@@ -47,9 +47,9 @@ return [
      'transfer_cheques' => 'Cheques Transactions',
      'cheque_no' => 'Cheque No',
      'cheque_nu' => 'Cheque Serial',
-     'cash_cheques' => 'Cash Cheques',
-     'receipt_cheques' => 'Recieve Rheques',
-     'release_date'=>'Release Rate',
+     'cash_cheques' => 'Payment Cheques',
+     'receipt_cheques' => 'Receive Cheques',
+     'release_date'=>'Release Date',
      'due_date'=>'Due Date',
      /*=====================================*/
      'company_reports' => 'Company Reports',
@@ -250,7 +250,7 @@ return [
 'confirmed_items'=>'confirmed_items',
 'detailed_standard'=>'Detailed standard',
 'person'=>'Person',
-'send_to'=>'Send To',
+'send_to'=>'Cheque To',
 'credit'=>'Credit',
 'depit'=>'Depit',
      /*------global Admin header----------*/
