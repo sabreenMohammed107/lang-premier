@@ -12,7 +12,7 @@
         <a href="#"></a>  {{ __('titles.report') }}<span class="bread-slash"> / </span>
     </li>
     <li>
-        <span class="bread-blod"> { __('titles.Permission_exchange_cash') }}  </span>
+        <span class="bread-blod"> {{ __('titles.Permission_receive_cash') }}  </span>
     </li>
 </ul>
 
@@ -35,7 +35,7 @@
                     <div class="sparkline13-list">
                         <div class="sparkline13-hd">
                             <div class="main-sparkline13-hd dir-rtl">
-                                <h4 >{{ __('titles.Permission_exchange_cash') }}</h4>
+                                <h4 >{{ __('titles.Permission_receive_cash') }}</h4>
                             </div>
                         </div>
                         <div class="sparkline13-graph">
