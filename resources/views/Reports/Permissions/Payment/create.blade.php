@@ -34,8 +34,8 @@
                 {{ csrf_field() }}
                     <div class="sparkline13-list">
                         <div class="sparkline13-hd">
-                            <div class="main-sparkline13-hd">
-                                <h4 style="text-align:right">{{ __('titles.Permission_receive_cash') }}</h4>
+                            <div class="main-sparkline13-hd dir-rtl">
+                                <h4 >{{ __('titles.Permission_receive_cash') }}</h4>
                             </div>
                         </div>
                         <div class="sparkline13-graph">

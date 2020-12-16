@@ -34,8 +34,8 @@
                 {{ csrf_field() }}
                     <div class="sparkline13-list">
                         <div class="sparkline13-hd">
-                            <div class="main-sparkline13-hd">
-                                <h4 style="text-align:right">{{ __('titles.Permission_receive_cash') }}</h4>
+                            <div class="main-sparkline13-hd dir-rtl">
+                                <h4 >{{ __('titles.Permission_exchange_cash') }}</h4>
                             </div>
                         </div>
                         <div class="sparkline13-graph">
@@ -44,7 +44,7 @@
                                     <button class="btn btn-primary waves-effect waves-light">{{ __('titles.show_report') }}</button>
                                 </div>
                                 <div class="form-group-inner" style="margin-right:10px;">
-                                    <div class="row" style="text-align:right !important;direction:rtl !important">
+                                <div class="row row-ltr" style="margin-top:5px;">
                                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
                                         <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 shadow">
                                         <div class="row row-ltr" style="margin-top:5px;">

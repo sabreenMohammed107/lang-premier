@@ -261,7 +261,7 @@ return [
      'Balancing' => 'Balancing',
      'work_role' => 'Working Roles',
      'balance_adjust' => 'Balance Adjustment',
-     'guid_item' => 'guids item',
+     'guid_item' => 'guided item',
      'users' => 'Users',
      'restrictions' => 'Restrictions',
      'annual_balance'=>'annual balance',
