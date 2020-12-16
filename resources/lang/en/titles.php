@@ -149,6 +149,7 @@ return [
 'permission_no'=>'Permission No',
 'declaration'=>'Statement',
 'outgoings'=>'Outgoings',
+
 'mony_amount'=>'Cash Source',
 'amount'=>'Cash Amount',
 'options'=>'Options',
