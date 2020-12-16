@@ -23,7 +23,7 @@ return [
      'other'=>'other',
      'type'=>'Type',
      'search'=>'Search',
-     'confirming'=>'confirmation',
+     'confirming'=>'Confirmation',
      /*------global Commans----------*/
      /*------global Company header----------*/
      'basic_data' => 'Basic Data',
@@ -44,13 +44,13 @@ return [
      'sale_bills' => 'Sales',
      /*========================*/
      'cheques' => 'Cheques',
-     'transfer_cheques' => 'Transfer cheques',
-     'cheque_no' => 'cheque no',
-     'cheque_nu' => 'cheque serial',
-     'cash_cheques' => 'cash cheques',
-     'receipt_cheques' => 'recieve cheques',
-     'release_date'=>'release date',
-     'due_date'=>'due date',
+     'transfer_cheques' => 'Cheques Transactions',
+     'cheque_no' => 'Cheque No',
+     'cheque_nu' => 'Cheque Serial',
+     'cash_cheques' => 'Cash Cheques',
+     'receipt_cheques' => 'Recieve Rheques',
+     'release_date'=>'Release Rate',
+     'due_date'=>'Due Date',
      /*=====================================*/
      'company_reports' => 'Company Reports',
      'company_statement' => 'Company Statement',

@@ -9,7 +9,7 @@
         <a href="#"></a> {{ __('titles.company') }}<span class="bread-slash"> / </span>
     </li>
     <li>
-        <span class="bread-blod"> {{ __('titles.cheques') }} </span>
+        <span class="bread-blod"> {{ __('titles.transfer_cheques') }} </span>
     </li>
 </ul>
 
@@ -30,7 +30,7 @@
                 <div class="sparkline13-list">
                     <div class="sparkline13-hd">
                         <div class="main-sparkline13-hd dir-rtl">
-                            <h4> {{ __('titles.company') }}</h4>
+                           
                             <h3 >شركة : {{$Company->company_official_name}}</h3><br />
                         </div>
                     </div>
