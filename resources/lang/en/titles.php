@@ -59,7 +59,7 @@ return [
      'sales_report' => 'Sales Report',
      'discount_notices' => 'Discount Notices',
      'cash_receipts_reports' => 'Cash Receipts Report',
-     'cash_payments_reports' => 'Cash payments Report',
+     'cash_payments_reports' => 'Cash Payments Report',
      'Permission_receive_cash' => 'Permission to receive cash Report',
      'Permission_exchange_cash' => 'Permission to exchange cash Report',
      'Permission_receive_cheques' => 'Permission to receive cheques Report',
@@ -69,6 +69,8 @@ return [
      'customer_balances_reports' => 'Customer Balance Report',
      'supplier_balances_reports' => 'Supplier Balance Report',
      'items_reports' => 'Items Report',
+     'approved'=>'Approved',
+     'not_approved'=>'Not Approved',
      /*===================================*/
      'transactions_reports' => 'Transactions Reports',
      'bank_transactions_reports' => 'Bank Transactions Report',

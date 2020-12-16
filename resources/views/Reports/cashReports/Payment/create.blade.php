@@ -99,9 +99,9 @@
                                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
                                                     <div class="bt-df-checkbox">
                                                         <input class="radio-checked" type="radio" checked="" value="0" id="optionsRadios1" name="approved">
-                                                        <label><b> {{ __('titles.not_confirm') }} </b></label>
+                                                        <label><b> {{ __('titles.not_approved') }} </b></label>
                                                         <input class="" type="radio" value="1" id="optionsRadios2" name="approved">
-                                                        <label><b> {{ __('titles.confirm') }} </b></label>
+                                                        <label><b> {{ __('titles.approved') }} </b></label>
                                                         <input class="" type="radio" id="optionsRadios3" value="" name="approved">
                                                         <label><b> {{ __('titles.all') }} </b></label>
                                                     </div>
@@ -144,9 +144,9 @@
                                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
                                                     <div class="bt-df-checkbox">
                                                         <input class="radio-checked" type="radio" checked="" value="0" id="optionsRadios1" name="confirm">
-                                                        <label><b> {{ __('titles.not_confirmed') }}</b></label>
+                                                        <label><b> {{ __('titles.not_confirm') }}</b></label>
                                                         <input class="" type="radio" value="1" id="optionsRadios2" name="confirm">
-                                                        <label><b> {{ __('titles.confirmed') }} </b></label>
+                                                        <label><b> {{ __('titles.confirm') }} </b></label>
                                                         <input class="" type="radio" value="" id="optionsRadios3" name="confirm">
                                                         <label><b> {{ __('titles.all') }} </b></label>
                                                     </div>
@@ -197,7 +197,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                                                    <label class="login2">{{ __('titles.guided_items') }}</label>
+                                                    <label class="login2">{{ __('titles.guid_item') }}</label>
                                                 </div>
                                             </div>
                                             <div class="row row-ltr" style="margin-top:5px;">
