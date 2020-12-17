@@ -86,7 +86,8 @@ class InvoiceReportsController extends Controller
         $Company = Company::find($id);
         $data = [
             'Invoices' => $Invoices,
-            'Title' => 'تقرير المشتريات',
+           
+            'Title' =>  \Lang::get('titles.buy_report'),
             'Today' => date('Y-m-d'),
             'Logo'  => $Company->company_logo,
             'Company' => $Company,
@@ -176,7 +177,8 @@ class InvoiceReportsController extends Controller
         $Company = Company::find($id);
         $data = [
             'Invoices' => $Invoices,
-            'Title' => 'فاتورة مبيعات',
+          
+            'Title' =>  \Lang::get('titles.sales_report'),
             'Today' => date('Y-m-d'),
             'Logo'  => $Company->company_logo,
             'Company' => $Company,

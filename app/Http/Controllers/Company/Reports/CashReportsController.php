@@ -102,7 +102,7 @@ class CashReportsController extends Controller
         $Company = Company::find($id);
         $data = [
             'Cashes' => $Cashes,
-            'Title' => 'تقرير المقبوضات النقدية',
+            'Title' => \Lang::get('titles.cash_receipts_reports'),
             'Today' => date('Y-m-d'),
             'Logo'  => $Company->company_logo,
             'Company' => $Company,
@@ -184,7 +184,7 @@ class CashReportsController extends Controller
         $Company = Company::find($id);
         $data = [
             'Cashes' => $Cashes,
-            'Title' => 'تقرير المدفوعات النقدية',
+            'Title' =>  \Lang::get('titles.cash_payments_reports'),
             'Today' => date('Y-m-d'),
             'Logo'  => $Company->company_logo,
             'Company' => $Company,

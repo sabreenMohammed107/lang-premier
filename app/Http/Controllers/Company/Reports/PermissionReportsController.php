@@ -67,7 +67,8 @@ class PermissionReportsController extends Controller
         $Company = Company::find($id);
         $data = [
             'Cashes' => $Cashes,
-            'Title' => 'اذن استلام نقدية',
+          
+            'Title' => \Lang::get('titles.Permission_receive_cash'),
             'Today' => date('Y-m-d'),
             'Logo'  => $Company->company_logo,
             'Company' => $Company,
@@ -139,7 +140,8 @@ class PermissionReportsController extends Controller
         $Company = Company::find($id);
         $data = [
             'Cashes' => $Cashes,
-            'Title' => 'اذن صرف نقدية',
+          
+            'Title' =>\Lang::get('titles.Permission_exchange_cash'),
             'Today' => date('Y-m-d'),
             'Logo'  => $Company->company_logo,
             'Company' => $Company,

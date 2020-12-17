@@ -68,7 +68,8 @@ class ClientsReportController extends Controller
         $Company = Company::find($id);
         $data = [
             'Suppliers' => $Suppliers,
-            'Title' => 'تقرير ارصدة عملاء',
+          
+            'Title' =>   \Lang::get('titles.customer_balances_reports'),
             'Today' => date('Y-m-d'),
             'Logo'  => $Company->company_logo,
             'Company' => $Company,

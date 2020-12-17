@@ -69,7 +69,8 @@ class SuppliersReportController extends Controller
         $Company = Company::find($id);
         $data = [
             'Suppliers' => $Suppliers,
-            'Title' => 'تقرير ارصدة موردين',
+            
+            'Title' =>\Lang::get('titles.supplier_balances_reports'),
             'Today' => date('Y-m-d'),
             'Logo'  => $Company->company_logo,
             'Company' => $Company,

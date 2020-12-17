@@ -69,7 +69,8 @@ class ChequesReportsController extends Controller
         $Company = Company::find($id);
         $data = [
             'Cheques' => $Cheques,
-            'Title' => 'تقرير إذونات إستلام النقدية',
+           
+            'Title' =>  \Lang::get('titles.Permission_receive_cash'),
             'Today' => date('Y-m-d'),
             'Logo'  => $Company->company_logo,
             'Company' => $Company,

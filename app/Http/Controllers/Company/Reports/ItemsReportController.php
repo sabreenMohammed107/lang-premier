@@ -63,7 +63,8 @@ class ItemsReportController extends Controller
         $Company = Company::find($id);
         $data = [
             'Items' => $Items,
-            'Title' => 'تقرير الاصناف',
+           
+            'Title' =>  \Lang::get('titles.items_reports'),
             'Today' => date('Y-m-d'),
             'Logo'  => $Company->company_logo,
             'Company' => $Company,
