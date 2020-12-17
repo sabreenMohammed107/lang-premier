@@ -25,7 +25,7 @@
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="product-status-wrap drp-lst dir-rtl">
-                    <h4 >{{ __('titles.work_role') }}</h4>
+                    <h4>{{ __('titles.work_role') }}</h4>
                 </div>
                 <div class="product-payment-inner-st">
                     <div class="row">
@@ -41,7 +41,13 @@
                                         @foreach($cases as $index => $case)
 
                                         <li class="{{ $index==0 ? 'active' : ''}}">
-                                            <a data-toggle="tab" href="#tab{{$index+1}}"><span class="edu-icon edu-analytics tab-custon-ic"></span>{{$case->item_case_name}}</a>
+                                            <a data-toggle="tab" href="#tab{{$index+1}}"><span class="edu-icon edu-analytics tab-custon-ic"></span>
+                                                @if(str_replace('_', '-', app()->getLocale())=='ar')
+                                                {{$case->item_case_name}}
+                                                @else
+                                                {{$case->item_en_name}}
+                                                @endif
+                                            </a>
 
                                         </li>
                                         @endforeach
@@ -57,8 +63,14 @@
                                                             <div class="row">
                                                                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 dir-rtl" style="border:solid .5px #ADD8E6">
                                                                     <div class="form-group">
-                                                                        <label class="">{{ __('titles.name') }}</label>
-                                                                        <input name="name_1" type="text" class="form-control" placeholder="{{$rows->where('item_case_id',100)[1]->item_name}}" disabled>
+                                                                        <label class="">{{ __('titles.name') }} </label>
+                                                                        <input name="name_1" type="text" class="form-control" placeholder="
+                                                                        @if(str_replace('_', '-', app()->getLocale())=='ar')
+                                                                        {{$rows->where('item_case_id',100)[1]->item_name}} 
+                                                                                                     @else
+                                                {{$rows->where('item_case_id',100)[1]->item_en_name}}
+                                                @endif
+                                                                        " disabled>
                                                                     </div>
                                                                     <div class="form-group">
                                                                         <label class="">{{ __('titles.thevalue') }} </label>
@@ -72,7 +84,13 @@
                                                                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 dir-rtl" style="border:solid .5px #ADD8E6">
                                                                     <div class="form-group">
                                                                         <label class="">{{ __('titles.name') }}</label>
-                                                                        <input name="name_2" type="text" class="form-control" placeholder="{{$rows->where('item_case_id',100)[0]->item_name}}" disabled>
+                                                                        <input name="name_2" type="text" class="form-control" placeholder="
+                                                                        @if(str_replace('_', '-', app()->getLocale())=='ar')
+                                                                        {{$rows->where('item_case_id',100)[0]->item_name}} 
+                                                                                                     @else
+                                                {{$rows->where('item_case_id',100)[0]->item_en_name}}
+                                                @endif
+                                                                        " disabled>
                                                                     </div>
                                                                     <div class="form-group">
                                                                         <label class="">{{ __('titles.thevalue') }}</label>
@@ -90,7 +108,11 @@
                                                                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 dir-rtl" style="border:solid .5px #ADD8E6">
                                                                     <div class="form-group">
                                                                         <label class="">{{ __('titles.name') }}</label>
-                                                                        <input name="name_3" type="text" class="form-control" placeholder="{{$rows->where('item_case_id',100)[2]->item_name}}" disabled>
+                                                                        <input name="name_3" type="text" class="form-control" placeholder="
+                                                                        @if(str_replace('_', '-', app()->getLocale())=='ar')
+                                                                        {{$rows->where('item_case_id',100)[2]->item_name}} @else
+                                               {{$rows->where('item_case_id',100)[2]->item_en_name}}
+                                                @endif" disabled>
                                                                     </div>
                                                                     <div class="form-group">
                                                                         <label class="">{{ __('titles.thevalue') }}</label>
@@ -127,7 +149,13 @@
                                                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 dir-rtl" style="border:solid .5px #ADD8E6">
                                                                     <div class="form-group">
                                                                         <label class="">{{ __('titles.name') }}</label>
-                                                                        <input name="" type="text" class="form-control" placeholder="{{$rows->where('item_case_id',101)[4]->item_name}}" disabled>
+                                                                        <input name="" type="text" class="form-control" placeholder="
+                                                                        
+                                                                        @if(str_replace('_', '-', app()->getLocale())=='ar')
+                                                                        {{$rows->where('item_case_id',101)[4]->item_name}}                                              @else
+                                               {{$rows->where('item_case_id',101)[4]->item_en_name}}
+                                                @endif
+                                                                        " disabled>
                                                                     </div>
                                                                     <div class="form-group">
                                                                         <label class="">{{ __('titles.guid_item') }}</label>
@@ -146,7 +174,12 @@
                                                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 dir-rtl" style="border:solid .5px #ADD8E6">
                                                                     <div class="form-group">
                                                                         <label class="">{{ __('titles.name') }}</label>
-                                                                        <input name="" type="text" class="form-control" placeholder="{{$rows->where('item_case_id',101)[3]->item_name}}" disabled>
+                                                                        <input name="" type="text" class="form-control" placeholder="
+                                                                        @if(str_replace('_', '-', app()->getLocale())=='ar')
+                                                                        {{$rows->where('item_case_id',101)[3]->item_name}}                                          @else
+                                                {{$rows->where('item_case_id',101)[3]->item_en_name}}
+                                                @endif
+                                                                       " disabled>
                                                                     </div>
                                                                     <div class="form-group">
                                                                         <label class="">{{ __('titles.guid_item') }}</label>
@@ -165,7 +198,13 @@
                                                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 dir-rtl" style="border:solid .5px #ADD8E6">
                                                                     <div class="form-group">
                                                                         <label class="">{{ __('titles.name') }}</label>
-                                                                        <input name="" type="text" class="form-control" placeholder="{{$rows->where('item_case_id',101)[6]->item_name}}" disabled>
+                                                                        <input name="" type="text" class="form-control" placeholder="
+                                                                       
+                                                                        @if(str_replace('_', '-', app()->getLocale())=='ar')
+                                                                        {{$rows->where('item_case_id',101)[6]->item_name}}                                  @else
+                                                 {{$rows->where('item_case_id',101)[6]->item_en_name}}
+                                                @endif
+                                                                       " disabled>
                                                                     </div>
                                                                     <div class="form-group">
                                                                         <label class="">{{ __('titles.guid_item') }}</label>
@@ -184,7 +223,14 @@
                                                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 dir-rtl" style="border:solid .5px #ADD8E6">
                                                                     <div class="form-group">
                                                                         <label class="">{{ __('titles.name') }}</label>
-                                                                        <input name="" type="text" class="form-control" placeholder="{{$rows->where('item_case_id',101)[5]->item_name}}" disabled>
+                                                                        <input name="" type="text" class="form-control" placeholder="
+                                                                       
+                                                                        @if(str_replace('_', '-', app()->getLocale())=='ar')
+                                                                        {{$rows->where('item_case_id',101)[5]->item_name}}  
+                                                                                                     @else
+                                                {{$rows->where('item_case_id',101)[5]->item_en_name}}
+                                                @endif
+                                                                        " disabled>
                                                                     </div>
                                                                     <div class="form-group">
                                                                         <label class="">{{ __('titles.guid_item') }}</label>
@@ -225,7 +271,13 @@
                                                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 dir-rtl" style="border:solid .5px #ADD8E6">
                                                                     <div class="form-group">
                                                                         <label class="">{{ __('titles.name') }}</label>
-                                                                        <input name="" type="text" class="form-control" placeholder="{{$rows->where('item_case_id',102)[8]->item_name}}" disabled>
+                                                                        <input name="" type="text" class="form-control" placeholder="
+                                                                       
+                                                                        @if(str_replace('_', '-', app()->getLocale())=='ar')
+                                                                        {{$rows->where('item_case_id',102)[8]->item_name}}  
+                                                                                                     @else
+                                                {{$rows->where('item_case_id',102)[8]->item_en_name}}
+                                                @endif" disabled>
                                                                     </div>
                                                                     <div class="form-group">
                                                                         <label class="">{{ __('titles.guid_item') }}</label>
@@ -244,7 +296,13 @@
                                                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 dir-rtl" style="border:solid .5px #ADD8E6">
                                                                     <div class="form-group">
                                                                         <label class="">{{ __('titles.name') }}</label>
-                                                                        <input name="" type="text" class="form-control" placeholder="{{$rows->where('item_case_id',102)[7]->item_name}}" disabled>
+                                                                        <input name="" type="text" class="form-control" placeholder="
+                                                                      
+                                                                        @if(str_replace('_', '-', app()->getLocale())=='ar')
+                                                                        {{$rows->where('item_case_id',102)[7]->item_name}}  
+                                                                                                     @else
+                                                {{$rows->where('item_case_id',102)[7]->item_en_name}}
+                                                @endif" disabled>
                                                                     </div>
                                                                     <div class="form-group">
                                                                         <label class="">{{ __('titles.guid_item') }}</label>
@@ -263,7 +321,13 @@
                                                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 dir-rtl" style="border:solid .5px #ADD8E6">
                                                                     <div class="form-group">
                                                                         <label class="">{{ __('titles.name') }}</label>
-                                                                        <input name="" type="text" class="form-control" placeholder="{{$rows->where('item_case_id',102)[10]->item_name}}" disabled>
+                                                                        <input name="" type="text" class="form-control" placeholder="
+                                                                       
+                                                                        @if(str_replace('_', '-', app()->getLocale())=='ar')
+                                                                        {{$rows->where('item_case_id',102)[10]->item_name}}  
+                                                                                                     @else
+                                                {{$rows->where('item_case_id',102)[10]->item_en_name}}
+                                                @endif" disabled>
                                                                     </div>
                                                                     <div class="form-group">
                                                                         <label class="">{{ __('titles.guid_item') }}</label>
@@ -282,7 +346,13 @@
                                                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 dir-rtl" style="border:solid .5px #ADD8E6">
                                                                     <div class="form-group">
                                                                         <label class="">{{ __('titles.name') }}</label>
-                                                                        <input name="" type="text" class="form-control" placeholder="{{$rows->where('item_case_id',102)[9]->item_name}}" disabled>
+                                                                        <input name="" type="text" class="form-control" placeholder="
+                                                                       
+                                                                        @if(str_replace('_', '-', app()->getLocale())=='ar')
+                                                                        {{$rows->where('item_case_id',102)[9]->item_name}}  
+                                                                                                     @else
+                                                {{$rows->where('item_case_id',102)[9]->item_en_name}}
+                                                @endif " disabled>
                                                                     </div>
                                                                     <div class="form-group">
                                                                         <label class="">{{ __('titles.guid_item') }}</label>
@@ -323,7 +393,13 @@
                                                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 dir-rtl" style="border:solid .5px #ADD8E6">
                                                                     <div class="form-group">
                                                                         <label class="">{{ __('titles.name') }}</label>
-                                                                        <input name="" type="text" class="form-control" placeholder="{{$rows->where('item_case_id',103)[12]->item_name}}" disabled>
+                                                                        <input name="" type="text" class="form-control" placeholder="
+                                                                       
+                                                                        @if(str_replace('_', '-', app()->getLocale())=='ar')
+                                                                        {{$rows->where('item_case_id',103)[12]->item_name}}  
+                                                                                                     @else
+                                                {{$rows->where('item_case_id',103)[12]->item_en_name}}
+                                                @endif" disabled>
                                                                     </div>
                                                                     <div class="form-group">
                                                                         <label class="">{{ __('titles.guid_item') }}</label>
@@ -342,7 +418,13 @@
                                                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 dir-rtl" style="border:solid .5px #ADD8E6">
                                                                     <div class="form-group">
                                                                         <label class="">{{ __('titles.name') }}</label>
-                                                                        <input name="" type="text" class="form-control" placeholder="{{$rows->where('item_case_id',103)[11]->item_name}}" disabled>
+                                                                        <input name="" type="text" class="form-control" placeholder="
+                                                                        
+                                                                        @if(str_replace('_', '-', app()->getLocale())=='ar')
+                                                                        {{$rows->where('item_case_id',103)[11]->item_name}}  
+                                                                                                     @else
+                                                {{$rows->where('item_case_id',103)[11]->item_en_name}}
+                                                @endif" disabled>
                                                                     </div>
                                                                     <div class="form-group">
                                                                         <label class="">{{ __('titles.guid_item') }}</label>
@@ -364,7 +446,13 @@
                                                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 dir-rtl" style="border:solid .5px #ADD8E6">
                                                                     <div class="form-group">
                                                                         <label class="">{{ __('titles.name') }}</label>
-                                                                        <input name="" type="text" class="form-control" placeholder="{{$rows->where('item_case_id',103)[13]->item_name}}" disabled>
+                                                                        <input name="" type="text" class="form-control" placeholder="
+                                                                      
+                                                                        @if(str_replace('_', '-', app()->getLocale())=='ar')
+                                                                        {{$rows->where('item_case_id',103)[13]->item_name}}  
+                                                                                                     @else
+                                                {{$rows->where('item_case_id',103)[13]->item_en_name}}
+                                                @endif" disabled>
                                                                     </div>
                                                                     <div class="form-group">
                                                                         <label class="">{{ __('titles.guid_item') }}</label>
