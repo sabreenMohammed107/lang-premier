@@ -118,7 +118,7 @@ return [
      'contact_person_mobile' => 'Contact  Mobile',
      'website' => 'Website',
      'email' => 'Email',
-     'registeration_no' => 'Registeration_no',
+     'registeration_no' => 'Registeration No',
      'legal_entity' => 'Legal Entity',
      'taxable' => 'Taxable',
 
@@ -220,12 +220,12 @@ return [
 'dont_delete_msg'=>'dont delete becouse transactions',
 
 /*==========================report =======================*/
-'supplier_balance'=>'Supplier Balance',
-'client_balance'=>'Client Balance',
-'employee_balance'=>'Employee Balance ',
+'supplier_balance'=>'Supplier Balance Report',
+'client_balance'=>'Customer Balance Report',
+'employee_balance'=>'Employee Balance Report ',
 'show_report'=>'Show Report',
 
-'permision_cash_report'=>'Permission to exchange cash',
+'permision_cash_report'=>'Permission to Pay cash',
 'date_from'=>'Date From ',
 'date_to'=>'Date To',
 'all'=>'All',

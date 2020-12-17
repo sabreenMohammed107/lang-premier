@@ -100,8 +100,12 @@ html,body,.body{
 .right{
     margin: 250px 0;
 }
-.right, .left{
+.right{
     float: left !important;
+    width:50%;
+}
+.left{
+    float: right !important;
     width:50%;
 }
 
@@ -135,9 +139,10 @@ html,body,.body{
                     <div class="rep_name">
                         <span>{{$Title}}</span>
                     </div><br><br>
+                  
                     <div  class="company">
                         <span>
-                            <div class="name">
+                            <div style="float: left; width:50%" class="name">
                                 <span> {{ __('titles.company') }} :</span>
                             </div>
                             <div class="off_name">

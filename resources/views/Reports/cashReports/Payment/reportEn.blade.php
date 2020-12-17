@@ -120,8 +120,12 @@
             margin: 250px 0;
         }
 
-        .right, .left{
+        .right{
     float: left !important;
+    width:50%;
+}
+.left{
+    float: right !important;
     width:50%;
 }
     </style>
@@ -155,7 +159,7 @@
                     <div class="rep_name">
                         <span>{{$Title}}</span>
                     </div><br><br>
-                    <div class="company">
+                    <div style="float: left; width:50%" class="company">
                         <span>
 
                             <div class="off_name">

@@ -148,6 +148,10 @@ tbody tr td{
                     <div class="rep_name">
                         <span>{{$Title}}</span>
                     </div><br><br>
+                  
+                    
+
+                    @if(str_replace('_', '-', app()->getLocale())=='ar') 
                     <div  class="company">
                         <span>
                             <div class="name">
@@ -159,8 +163,20 @@ tbody tr td{
                                 </span>
                             </div>
                         </span>
-                    </div>
-
+                    </div> @else
+                    <div style="float: left !important ;width:50%" class="company">
+                        <span>
+                           
+                            <div class="off_name">
+                                <span>
+                                {{$Company->company_official_name}}
+                                </span>
+                            </div>
+                            <div class="name">
+                                <span>{{ __('titles.company') }} :</span>
+                            </div>
+                        </span>
+                    </div>   @endif
                 </htmlpageheader>
 
                 <htmlpagefooter name="page-footer">

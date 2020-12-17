@@ -105,7 +105,7 @@ html,body,.body{
     width:80%;
 }
 .left{
-    float: right;
+    float: left;
     width:20%;
     text-align: center;
 }
@@ -218,7 +218,7 @@ td{
 
 @foreach ($Cheques as $i => $Cheque)
 
-<div style="float:right;text-align: right;font-size:12px;background-color: #eee;padding:10px;direction:rtl; width:70%;">
+<div style="float:left;text-align: left;font-size:12px;background-color: #eee;padding:10px;direction:ltr; width:70%;">
     @if ($Cheque->trans_type == 1)
     <span >{{ __('titles.recieved_from') }} : {{$Cheque->person_name}}</span><br>
     @else

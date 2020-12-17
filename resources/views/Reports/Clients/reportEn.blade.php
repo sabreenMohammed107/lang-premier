@@ -102,7 +102,7 @@ html,body,.body{
     margin: 250px 0;
 }
 .right, .left{
-    float: right;
+    float: left;
     width:50%;
 }
 tbody tr{
@@ -148,19 +148,21 @@ tbody tr td{
                     <div class="rep_name">
                         <span>{{$Title}}</span>
                     </div><br><br>
-                    <div dir="rtl" class="company">
+                    
+                    <div style="float: left !important ;width:50%" class="company">
                         <span>
-                            <div class="name">
-                                <span>{{ __('titles.company') }} :</span>
-                            </div>
+                           
                             <div class="off_name">
                                 <span>
                                 {{$Company->company_official_name}}
                                 </span>
                             </div>
+                            <div class="name">
+                                <span>{{ __('titles.company') }} :</span>
+                            </div>
                         </span>
                     </div>
-
+                   
                 </htmlpageheader>
 
                 <htmlpagefooter name="page-footer">
