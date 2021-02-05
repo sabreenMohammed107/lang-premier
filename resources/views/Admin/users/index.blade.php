@@ -75,7 +75,7 @@
 									<th>{{ __('titles.options') }}</th>
 								</tr>
 							</thead>
-							<tbody>
+							<tbody class="dir-rtl">
 
 								@foreach($rows as $index => $row)
 								<tr>
