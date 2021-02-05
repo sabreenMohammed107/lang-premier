@@ -2,11 +2,11 @@
     @foreach($rows as $row)
 					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12  mg-b-15" >
 						<div class="courses-inner res-mg-b-30">
-							<div class="courses-title">
+							<div class="courses-title dir-rtl">
 								<a href="#"><img style="width: 100%;height:300px" src="{{ asset('uploads/companies/'.$row->company_logo)}}" onerror="this.onerror=null;this.src='{{ asset('webassets/img/default.png')}}';"  style="height:300px;width:100%" alt=""></a>
 								<h2>{{$row->company_official_name}}</h2>
 							</div>
-							<div class="course-des">
+							<div class="course-des dir-rtl">
 								<p><span><i class="fa fa-clock"></i></span> <b><h2> {{ __('titles.registeration_no') }}</h2>:</b> {{$row->registeration_no}}</p>
 								<p><span><i class="fa fa-clock"></i></span> <b><h2> {{ __('titles.tax_authority') }}</h2>:</b> {{$row->tax_authority}}</p>
 								<p><span><i class="fa fa-clock"></i></span> <b><h2> {{ __('titles.legal_entity') }}</h2>:</b> {{$row->legal_entity}}</p>
