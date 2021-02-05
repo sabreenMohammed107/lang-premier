@@ -7,12 +7,25 @@
 @section('crumb')
 
 <ul class="breadcome-menu">
+ 
+    
+    @if(str_replace('_', '-', app()->getLocale())=='ar')
     <li>
-        <a href="{{url('/')}}">{{ __('titles.home') }}<span class="bread-slash"> / </span></a>
+        <a href="#"></a>  {{ __('titles.home') }} <span class="bread-slash"> / </span>
     </li>
     <li>
         <span class="bread-blod">{{ __('titles.work_role') }} </span>
     </li>
+	@else
+   
+    <li>
+        <span class="bread-blod">{{ __('titles.work_role') }} </span>
+    </li>
+    <li>
+        <a href="#"></a>  {{ __('titles.home') }}
+    </li>
+   
+	@endif
 </ul>
 
 @endsection
