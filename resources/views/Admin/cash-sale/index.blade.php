@@ -4,7 +4,7 @@
 
 @section('crumb')
 
-<ul class="breadcome-menu">
+<ul class="breadcome-menu dir-rtl">
     <li>
         <a href="#"></a> {{ __('titles.home') }}<span class="bread-slash"> / </span>
     </li>
