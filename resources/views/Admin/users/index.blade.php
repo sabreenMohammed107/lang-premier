@@ -44,11 +44,7 @@
         color: white !important;
     }
 
-    #table td,
-    th {
-        text-align: right;
-        text-indent: 10px;
-    }
+    
 </style>
 @endsection
 @section('content')
