@@ -58,8 +58,8 @@
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<div class="product-status-wrap drp-lst dir-rtl">
 					<h4>{{ __('titles.users') }}</h4>
-					<div class="add-product">
-						<a href="{{route('users.create')}}" style="direction:ltr">{{ __('titles.add') }}</a>
+					<div class="add-product dir-rtl">
+						<a href="{{route('users.create')}}" >{{ __('titles.add') }}</a>
 					</div>
 					<div class="asset-inner">
 					<table class="table-striped table dir-rtl" id="table" data-toggle="table" data-pagination="true" data-search="true" data-show-columns="true" data-show-pagination-switch="true" data-show-refresh="true" data-key-events="true" data-resizable="true" data-cookie="true" data-cookie-id-table="saveId" data-show-export="true" data-click-to-select="true" data-toolbar="#toolbar">
@@ -75,7 +75,7 @@
 									<th>{{ __('titles.options') }}</th>
 								</tr>
 							</thead>
-							<tbody class="dir-rtl">
+							<tbody align="center">
 
 								@foreach($rows as $index => $row)
 								<tr>
