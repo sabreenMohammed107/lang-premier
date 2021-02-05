@@ -201,7 +201,7 @@
                                                 </div>
                                             </div>
                                             <div class="row row-ltr" style="margin-top:5px;">
-                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
                                                     <select data-placeholder="Choose a Country..." name="person_id" id="persons" class="selectpicker" data-live-search="true" data-width="100%" tabindex="-1">
                                                         <option value="" selected disabled>Select</option>
                                                         @foreach ($Persons as $Person)
@@ -281,6 +281,7 @@
             data: {
                 compid: compid
             },
+           
             success: function(data) {
                 $('#persons').html(data);
                 $('#persons').selectpicker('refresh');

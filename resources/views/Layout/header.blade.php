@@ -36,7 +36,7 @@
 													<div role="menu" class="dropdown-menu animated zoomIn">
 														<a href="{{ route('work-role.index') }}" class="dropdown-item">{{ __('titles.work_role') }}</a>
 														<a href="{{ route('balance-adjust') }}" class="dropdown-item">{{ __('titles.balance_adjust') }}</a>
-														<a href="{{ route('guid-item.index') }}" class="dropdown-item">{{ __('titles.guid_item') }}</a>
+														<a href="{{ route('guid-item.index') }}" class="dropdown-item">{{ __('titles.guid_items') }}</a>
 														<a href="{{ route('users.index') }}" class="dropdown-item">{{ __('titles.users') }}</a>
 													</div>
 												</li>
@@ -160,7 +160,7 @@
 											<ul class="collapse dropdown-header-top">
 												<li><a href="{{ route('work-role.index') }}" class="dropdown-item">{{ __('titles.work_role') }}</a></li>
 												<li><a href="{{ route('balance-adjust') }}" class="dropdown-item">{{ __('titles.balance_adjust') }}</a></li>
-												<li><a href="{{ route('guid-item.index') }}" class="dropdown-item">{{ __('titles.guid_item') }}</a></li>
+												<li><a href="{{ route('guid-item.index') }}" class="dropdown-item">{{ __('titles.guid_items') }}</a></li>
 												<li><a href="{{ route('users.index') }}" class="dropdown-item">{{ __('titles.users') }}</a></li>
 											</ul>
 										</li>
