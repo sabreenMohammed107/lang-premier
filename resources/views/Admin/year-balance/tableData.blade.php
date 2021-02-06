@@ -1,5 +1,5 @@
 <div class="form-group-inner" style="margin-right:10px;">
-    <div class="row res-rtl" style="display: flex ;flex-direction: row-reverse ;">
+    <div class="row dir-rtl" >
 
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 shadow mg-b-15" >
             <div class="row row-ltr" style="margin-top:5px;">

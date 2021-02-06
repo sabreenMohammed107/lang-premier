@@ -16,7 +16,7 @@
 	@else
    
     <li>
-        <span class="bread-blod"> {{ __('titles.restrictions') }}</span>
+        <span class="bread-blod"> {{ __('titles.restrictions') }} /</span>
     </li>
     <li>
         <a href="#"></a>  {{ __('titles.home') }}
