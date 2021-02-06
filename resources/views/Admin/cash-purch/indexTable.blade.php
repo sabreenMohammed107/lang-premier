@@ -34,6 +34,7 @@
             <td>{{$row->net_value}}</td>
             <td>
                 <div class="product-buttons">
+                <button title="View" class="pd-setting-ed"><i class="fa fa-file" aria-hidden="true"></i></button>
 
                     <!-- <button title="View" class="pd-setting-ed"><i class="fa fa-file" aria-hidden="true"></i></button> -->
                     <!-- <button data-toggle="modal" data-target="#del" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></button> -->
