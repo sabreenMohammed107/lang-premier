@@ -57,7 +57,7 @@
                                                             <input name="company_nick_name" type="text" class="form-control" placeholder="{{ __('titles.company_nick_name') }} ">
                                                         </div>
 														 <div class="form-group">
-                                                            <label class="" {{ __('titles.tax_authority') }}</label>
+                                                            <label class=""> {{ __('titles.tax_authority') }}</label>
                                                             <input name="tax_authority" type="text" class="form-control" placeholder=" {{ __('titles.tax_authority') }}">
                                                         </div>
 														 <div class="form-group">
