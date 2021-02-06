@@ -220,7 +220,7 @@ td{
 <div class="rep_name">
     <span >{{ __('titles.permission_no') }} : {{$Cash->exit_permission_code}}</span>
 </div><br><br><br>
-<div style="float:right;text-align: right;font-size:12px;background-color: #eee;padding:10px;direction:rtl; width:70%;">
+<div style="float:left;text-align: left;font-size:12px;background-color: #eee;padding:10px;direction:ltr; width:60%;">
     <span >{{ __('titles.cashed_to') }} : {{$Cash->person_name}}</span><br>
     <span >{{ __('titles.date') }} : {{date('d-m-Y', strtotime($Cash->cash_date))}}</span>
 </div>
