@@ -38,10 +38,7 @@
         color: white !important;
     }
 
-    #table td,
-    th {
-        text-align: right
-    }
+   
 </style>
 <!-- Static Table Start -->
 <div class="data-table-area mg-b-15">

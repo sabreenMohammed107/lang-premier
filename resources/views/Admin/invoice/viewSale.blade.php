@@ -51,7 +51,7 @@ box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);
    
    
     <li>
-        <span class="bread-blod">  {{ __('titles.sales') }}</span>
+        <span class="bread-blod">  {{ __('titles.sales') }} /</span>
     </li>
     <li>
         <a href="#"></a>  {{ __('titles.home') }}
