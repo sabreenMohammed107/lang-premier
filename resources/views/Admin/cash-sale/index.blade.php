@@ -20,7 +20,7 @@
     <li>
         <span class="bread-blod"> {{ __('titles.cash_receipts') }} / </span>
     </li>
-    <li><span class="bread-slash"> / </span>
+    <li> <a href="#"></a> {{ __('titles.home') }}
     </li>
 	@endif
 </ul>
