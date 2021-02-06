@@ -1,4 +1,4 @@
-<table class="table" id="table" style="direction:rtl">
+<table class="table dir-rtl" id="table" >
 	<thead>
 		<tr>
 			<th>{{ __('titles.month') }}</th>
