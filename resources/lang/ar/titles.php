@@ -33,6 +33,7 @@ return [
        'cash_box' => 'الخزينة',
        'cash_receipts' => 'مقبوضات نقدية',
        'cash_payments' => 'مدفوعات نقدية',
+       'payment'=>'مدفوعات',
        /*========================*/
        'company' => 'الشركة',
        'items_statment' => 'الأصناف',

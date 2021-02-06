@@ -75,7 +75,7 @@
                                         <th data-field="net" data-sortable="true">{{ __('titles.net_value') }}</th>
                                         <th data-field="outgoing" data-sortable="true">{{ __('titles.outgoings') }}</th>
                                         <th data-field="purchasing" data-sortable="true">{{ __('titles.Services') }}</th>
-                                        <th data-field="service" data-sortable="true">{{ __('titles.purshasing') }}</th>
+                                        <th data-field="service" data-sortable="true">{{ __('titles.payment') }}</th>
                                         <th data-field="actions" data-sortable="false">{{ __('titles.options') }}</th>
                                       </tr>
                                 </thead>

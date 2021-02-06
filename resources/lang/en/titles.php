@@ -38,6 +38,7 @@ return [
      'cash_box' => 'Cash Box',
      'cash_receipts' => 'Cash Receipts',
      'cash_payments' => 'Cash Payments',
+     'payment'=>'Payments',
      /*============================*/
      'bills' => 'Invoices',
      'purchasing' => 'Purchasing',
