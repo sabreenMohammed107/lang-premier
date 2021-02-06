@@ -223,7 +223,7 @@ td{
 </div><br><br><br>
 
 
-<div style="float:right;text-align: left;font-size:12px;background-color: #eee;padding:10px;direction:ltr; width:70%;">
+<div style="float:left;text-align: left;font-size:12px;background-color: #eee;padding:10px;direction:ltr; width:70%;">
     <span >{{ __('titles.recieved_from') }}  : {{$Cash->person_name}}</span><br>
     <span> {{ __('titles.date') }} : {{date('d-m-Y', strtotime($Cash->cash_date))}}</span>
 </div>
