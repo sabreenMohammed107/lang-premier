@@ -277,9 +277,9 @@ return [
           'closing'=>'Closing',
           'start_opening'=>'Start Open',
           'close_this_year'=>'Close This Year',
-       'exit_close_year'=>'Exit Closing Year',
-       'open_new_balance'=>'OPen + new Balance',
-       'exit_year_balance'=>'Exit This Balance',
+       'exit_close_year'=>'Cancel Closing Year',
+       'open_new_balance'=>'Open + Balancing',
+       'exit_year_balance'=>'Cancel This Balancing',
        /*--------------------------------------*/
        'thevalue'=>'The Value',
        'restrictions'=>'Automated Records',
