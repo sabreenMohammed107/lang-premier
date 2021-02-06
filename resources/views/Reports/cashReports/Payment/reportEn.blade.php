@@ -285,7 +285,7 @@
                     </span>
                 </div>
                 <div class="name">
-                    <span>{{ __('titles.guided_item') }} </span>
+                    <span>{{ __('titles.guid_item') }} </span>
                 </div>
             </span>
         </div>

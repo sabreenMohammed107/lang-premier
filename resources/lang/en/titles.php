@@ -153,7 +153,7 @@ return [
 'declaration'=>'Statement',
 'outgoings'=>'Outgoings',
 
-'mony_amount'=>'Cash Source',
+'mony_amount'=>'Cash Value',
 'amount'=>'Cash Amount',
 'options'=>'Options',
 'not_confirm'=>'Not Confirmed',
