@@ -282,7 +282,7 @@ return [
        'exit_year_balance'=>'Exit This Balance',
        /*--------------------------------------*/
        'thevalue'=>'The Value',
-       'restrictions'=>'Restrictions',
+       'restrictions'=>'Automated Records',
        'years'=>'Years',
        'months'=>'Months',
        'guidance'=>' Guidance',
