@@ -222,7 +222,12 @@ td{
     <span >{{ __('titles.permission_no') }} : {{$Cash->cash_receipt_note}}</span>
 </div><br><br><br>
 
-<div class="left" style="float: left;">
+
+<div style="float:right;text-align: left;font-size:12px;background-color: #eee;padding:10px;direction:ltr; width:70%;">
+    <span >{{ __('titles.recieved_from') }}  : {{$Cash->person_name}}</span><br>
+    <span> {{ __('titles.date') }} : {{date('d-m-Y', strtotime($Cash->cash_date))}}</span>
+</div>
+<div class="left" style="float: left;width:20%;">
     <div  class="company">
         <span>
            
@@ -236,10 +241,6 @@ td{
             </div>
         </span>
     </div>
-</div>
-<div style="float:right;text-align: left;font-size:12px;background-color: #eee;padding:10px;direction:ltr; width:70%;">
-    <span >{{ __('titles.recieved_from') }}  : {{$Cash->person_name}}</span><br>
-    <span> {{ __('titles.date') }} : {{date('d-m-Y', strtotime($Cash->cash_date))}}</span>
 </div>
 <div style="clear: both;"></div>
 <hr>
