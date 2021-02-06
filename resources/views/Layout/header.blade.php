@@ -64,7 +64,7 @@
 												<li class="nav-item dropdown res-dis-nn">
 													<a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><span class="angle-down-topmenu"><i class="fa fa-angle-down"></i></span>  {{ __('titles.company_reports') }} </a>
 													<div role="menu" class="dropdown-menu animated zoomIn">
-														<a href="#" class="dropdown-item">{{ __('titles.reports') }}</a>
+													
 														<a href="#" class="dropdown-item">{{ __('titles.customer_data_report') }}</a>
 														<a href="{{url('/Admin/Cash/Purchasing/Report/Create')}}" class="dropdown-item">{{ __('titles.cash_payments_reports') }}</a>
 														<a href="{{url('/Admin/Invoices/Purchasing/Report/Create')}}" class="dropdown-item">{{ __('titles.buy_report') }}</a>
