@@ -245,7 +245,7 @@ return [
 'person_type'=>'person type',
 'recieved_from'=>'recieved from',
 'cashed_to'=>'cashed to',
-'mony_amount'=>'Cash Source',
+'mony_amount'=>'Cash Amount',
 'reciver_name'=>'reciver name',
 'id_no'=>'id no',
 'signature'=>'signature',
