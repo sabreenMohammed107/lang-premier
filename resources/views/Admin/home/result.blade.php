@@ -1,16 +1,16 @@
 <div class="row mg-b-15"  >
     @foreach($rows as $row)
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12  mg-b-15" >
+	<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12  mg-b-15" >
 						<div class="courses-inner res-mg-b-30">
 							<div class="courses-title dir-rtl">
-								<a href="#"><img style="width: 100%;height:300px" src="{{ asset('uploads/companies/'.$row->company_logo)}}" onerror="this.onerror=null;this.src='{{ asset('webassets/img/default.png')}}';"  style="height:300px;width:100%" alt=""></a>
+								<a href="#"><img  src="{{ asset('uploads/companies/'.$row->company_logo)}}" onerror="this.onerror=null;this.src='{{ asset('webassets/img/default.png')}}';"  style="height:300px;width:100%" alt=""></a>
 								<h2>{{$row->company_official_name}}</h2>
 							</div>
 							<div class="course-des dir-rtl">
-								<p><span><i class="fa fa-clock"></i></span> <b><h2> {{ __('titles.registeration_no') }}</h2>:</b> {{$row->registeration_no}}</p>
-								<p><span><i class="fa fa-clock"></i></span> <b><h2> {{ __('titles.tax_authority') }}</h2>:</b> {{$row->tax_authority}}</p>
-								<p><span><i class="fa fa-clock"></i></span> <b><h2> {{ __('titles.legal_entity') }}</h2>:</b> {{$row->legal_entity}}</p>
-								<p><span><i class="fa fa-clock"></i></span> <b><h2> {{ __('titles.active') }}</h2>:</b><i class="fa fa-check"></i></p>
+								<p><span><i class="fa fa-clock"></i></span> <b> {{ __('titles.registeration_no') }}:</b> {{$row->registeration_no}}</p>
+								<p><span><i class="fa fa-clock"></i></span> <b> {{ __('titles.tax_authority') }}:</b> {{$row->tax_authority}}</p>
+								<p><span><i class="fa fa-clock"></i></span> <b>{{ __('titles.legal_entity') }}:</b> {{$row->legal_entity}}</p>
+								<p><span><i class="fa fa-clock"></i></span> <b>{{ __('titles.active') }}:</b><i class="fa fa-check"></i></p>
 							</div>
 							<div class="product-buttons">
 							<a data-toggle="tooltip" title="View" href="{{ route('home.show',$row->id) }}" class="pd-setting-ed"><i class="fa fa-file" aria-hidden="true"></i></a>

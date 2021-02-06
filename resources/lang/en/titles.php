@@ -289,7 +289,7 @@ return [
        'month'=>'Month',
        'theclosing'=>'the Closing',
        'exit_theclosing'=>'Exit The Closing',
-       'previlidge'=>'Previlidge',
+       'previlidge'=>'Privilege',
        'user_full_name'=>'User Full Name',
        'password'=>'Password',
       
