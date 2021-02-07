@@ -238,7 +238,7 @@ return [
 'done'=>'Done',
 'page_no'=>'Page No',
 'user_name'=>'User Name',
-'total_repayment'=>'Total Payment',
+'total_repayment'=>'Total Payments',
 'total_purchases' =>'Total purchases',
 'total_items'=>'total items',
 'person_type'=>'person type',

@@ -281,9 +281,7 @@
                 <div  class="company">
                     <span>
                     @if(str_replace('_', '-', app()->getLocale())=='ar')
-                    @else
-                    @endif
-                        <div class="name">
+                    <div class="name">
                             <span>{{ __('titles.name') }} </span>
                         </div>
                         <div class="off_name">
@@ -291,6 +289,18 @@
                                 {{$rows->supplier_name ?? ''}}
                             </span>
                         </div>
+                    @else
+                    <div class="off_name">
+                            <span>
+                                {{$rows->supplier_name ?? ''}}
+                            </span>
+                        </div>
+                    <div class="name">
+                            <span>{{ __('titles.name') }} </span>
+                        </div>
+                       
+                    @endif
+                       
                     </span>
                 </div>
                 <div  class="company">
