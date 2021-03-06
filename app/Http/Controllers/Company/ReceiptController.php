@@ -113,7 +113,7 @@ class ReceiptsController extends Controller
             if($request->person_type != null){
                 DB::table('finan_transactions')->insert(
                     ['transaction_type_id' => '104',
-                    'transaction_date' => new \DateTime(),
+                    'transaction_date' => $request->cash_date,
                     'person_id' => $Person->id,
                     'person_name'=>$Person->person_name,
                     'person_type_id'=> $Person->person_type_id,
@@ -127,7 +127,7 @@ class ReceiptsController extends Controller
             }else{
                 DB::table('finan_transactions')->insert(
                     ['transaction_type_id' => '104',
-                    'transaction_date' => new \DateTime(),
+                    'transaction_date' => $request->cash_date,
                     'person_name'=>$request->person_name,
                     'safe_id'=>$Company->safe_id,
                     'cash_id'=>$CashSales->id,
@@ -177,6 +177,9 @@ class ReceiptsController extends Controller
 
     public function Update(Request $request, int $cash_id)
     {
+
+       \Log::info('message');
+       
         DB::beginTransaction();
         try {
             $Cash = CashMaster::find($cash_id);
@@ -198,10 +201,11 @@ class ReceiptsController extends Controller
 
             $CashPurch = $Cash->update($request->except('id'));
             $Transaction = FinanTransaction::where('cash_id','=',$cash_id)->first();
+           
             if($request->person_type != null){
                 $Transaction->update(
                     ['transaction_type_id' => '104',
-                    'transaction_date' => new \DateTime(),
+                    'transaction_date' => $request->cash_date,
                     'person_id' => $Person->id,
                     'person_name'=>$Person->person_name,
                     'cash_id'=>$cash_id,
@@ -214,7 +218,7 @@ class ReceiptsController extends Controller
             }else{
                 $Transaction->update(
                     ['transaction_type_id' => '104',
-                    'transaction_date' => new \DateTime(),
+                    'transaction_date' => $request->cash_date,
                     'person_name'=>$request->person_name,
                     'person_id'=>null,
                     'person_type_id'=>null,
